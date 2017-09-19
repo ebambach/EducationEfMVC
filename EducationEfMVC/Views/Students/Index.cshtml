@@ -69,19 +69,19 @@
             @Html.DisplayFor(modelItem => item.Birthday)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.PhoneNumber)
+            @Html.DisplayFor(modelItem => item.PhoneNumber, "Phone Number")
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Email)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Majorid)
+            @Html.DisplayFor(modelItem => item.Majorid, "Major Id")
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Sat)
+            @Html.DisplayFor(modelItem => item.Sat, "SAT")
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Gpa)
+            @Html.DisplayFor(modelItem => item.Gpa, "GPA")
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
