@@ -92,3 +92,7 @@ C:\repos\EducationEfMVC\EducationEfMVC\obj\Debug\EducationEfMVC.csprojResolveAss
 C:\repos\EducationEfMVC\EducationEfMVC\obj\Debug\EducationEfMVC.csproj.CoreCompileInputs.cache
 C:\repos\EducationEfMVC\EducationEfMVC\obj\Debug\EducationEfMVC.dll
 C:\repos\EducationEfMVC\EducationEfMVC\obj\Debug\EducationEfMVC.pdb
+C:\repos\EducationEfMVC\EducationEfMVC\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\repos\EducationEfMVC\EducationEfMVC\bin\System.Diagnostics.DiagnosticSource.dll
+C:\repos\EducationEfMVC\EducationEfMVC\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\repos\EducationEfMVC\EducationEfMVC\bin\System.Diagnostics.DiagnosticSource.xml

@@ -1,0 +1,31 @@
+﻿@model int
+
+@{
+    ViewBag.Title = "Grade";
+    //This starts by reading the value passed into Grade (Html.ValueFor(x => x)), then it
+    //turns the value into a string, via ToString(), which is THEN converted into an int
+    //using int.Parse.
+    var number = int.Parse(Html.ValueFor(x => x).ToString());
+    string grade = null;
+
+    //Remember, a switch is like an if statement that provides several cases for what you
+    //check for, and what to do when that condition is met.
+    switch (number) {
+        case 1:
+            grade = "A";
+            break;
+        case 2:
+            grade = "B";
+            break;
+        case 3:
+            grade = "C";
+            break;
+        default:
+            grade = "F";
+            break;
+    }
+    }
+
+<h2>Grade</h2>
+
+<p>The value for Id is: @grade</p>

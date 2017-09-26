@@ -14,8 +14,13 @@ namespace EducationEfMVC
     {
         private EducationEfMVCContext db = new EducationEfMVCContext();
 
-        // GET: Students
-        public ActionResult Index()
+		// GET: Students/Grade/id
+		public ActionResult Grade(int? id) {
+			return View(id);
+		}
+
+		// GET: Students
+		public ActionResult Index()
         {
             return View(db.Students.ToList());
         }

@@ -19,5 +19,6 @@ namespace EducationEfMVC {
 		public int Majorid { get; set; }
 		public int Sat { get; set; }
 		public double Gpa { get; set; }
+		/*public int Grade { get; set; }*/
 	}
 }
