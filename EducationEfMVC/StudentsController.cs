@@ -22,7 +22,13 @@ namespace EducationEfMVC
 		// GET: Students
 		public ActionResult Index()
         {
-            return View(db.Students.ToList());
+			var students = db.Students.ToList();
+
+			foreach(var student in students) {
+				student.Major = db.Majors.Find(student.MajorId);
+			}
+
+			return View(students);
         }
 
         // GET: Students/Details/5
@@ -37,6 +43,10 @@ namespace EducationEfMVC
             {
                 return HttpNotFound();
             }
+			if (student.MajorId != null) {
+				student.Major = db.Majors.Find(student.MajorId);
+			}
+
             return View(student);
         }
 
@@ -51,7 +61,7 @@ namespace EducationEfMVC
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,FirstName,LastName,Address,City,State,Zipcode,Birthday,PhoneNumber,Email,Majorid,Sat,Gpa")] Student student)
+        public ActionResult Create([Bind(Include = "Id,FirstName,LastName,Address,City,State,Zipcode,Birthday,PhoneNumber,Email,MajorId,Sat,Gpa")] Student student)
         {
             if (ModelState.IsValid)
             {
@@ -83,7 +93,7 @@ namespace EducationEfMVC
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,FirstName,LastName,Address,City,State,Zipcode,Birthday,PhoneNumber,Email,Majorid,Sat,Gpa")] Student student)
+        public ActionResult Edit([Bind(Include = "Id,FirstName,LastName,Address,City,State,Zipcode,Birthday,PhoneNumber,Email,MajorId,Sat,Gpa")] Student student)
         {
             if (ModelState.IsValid)
             {

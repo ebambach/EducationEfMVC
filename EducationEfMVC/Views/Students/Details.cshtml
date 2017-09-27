@@ -83,11 +83,16 @@
         </dd>
 
         <dt>
-            Major Id
+            Major
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Majorid)
+            @if (Model.Major == null) {
+                <span>Undeclared</span>
+            }
+            else {
+            @Html.DisplayFor(model => model.Major.Description)
+            }
         </dd>
 
         <dt>

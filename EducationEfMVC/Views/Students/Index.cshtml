@@ -14,7 +14,7 @@
         <th>
            Full Name
         </th>
-        <th>
+        @*<th>
             @Html.DisplayNameFor(model => model.Address)
         </th>
         <th>
@@ -28,22 +28,22 @@
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Birthday)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.PhoneNumber)
-        </th>
+        </th>        
         <th>
             @Html.DisplayNameFor(model => model.Email)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Majorid)
-        </th>
+        </th>*@
         <th>
             @Html.DisplayNameFor(model => model.Sat)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Gpa)
         </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PhoneNumber)
+        </th>
+        <th>
+            Major
+        </th>        
         <th></th>
     </tr>
 
@@ -53,7 +53,7 @@
             @Html.DisplayFor(modelItem => item.FirstName)&nbsp;
             @Html.DisplayFor(modelItem => item.LastName)
         </td>
-        <td>
+        @*<td>
             @Html.DisplayFor(modelItem => item.Address)
         </td>
         <td>
@@ -69,19 +69,23 @@
             @Html.DisplayFor(modelItem => item.Birthday)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.PhoneNumber, "Phone Number")
-        </td>
-        <td>
             @Html.DisplayFor(modelItem => item.Email)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Majorid, "Major Id")
-        </td>
+        </td>*@
         <td>
             @Html.DisplayFor(modelItem => item.Sat, "SAT")
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Gpa, "GPA")
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PhoneNumber, "Phone Number")
+        </td>        
+        <td>
+            @if (item.Major == null) {
+                <span>Undeclared</span>
+            }else {
+                @Html.DisplayFor(modelItem => item.Major.Description, "Major")
+            }
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |

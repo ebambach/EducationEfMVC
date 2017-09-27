@@ -88,7 +88,6 @@ C:\repos\EducationEfMVC\EducationEfMVC\bin\Microsoft.AI.DependencyCollector.xml
 C:\repos\EducationEfMVC\EducationEfMVC\bin\Microsoft.AI.ServerTelemetryChannel.xml
 C:\repos\EducationEfMVC\EducationEfMVC\bin\Microsoft.AI.WindowsServer.xml
 C:\repos\EducationEfMVC\EducationEfMVC\bin\Microsoft.AI.Web.xml
-C:\repos\EducationEfMVC\EducationEfMVC\obj\Debug\EducationEfMVC.csprojResolveAssemblyReference.cache
 C:\repos\EducationEfMVC\EducationEfMVC\obj\Debug\EducationEfMVC.csproj.CoreCompileInputs.cache
 C:\repos\EducationEfMVC\EducationEfMVC\obj\Debug\EducationEfMVC.dll
 C:\repos\EducationEfMVC\EducationEfMVC\obj\Debug\EducationEfMVC.pdb
@@ -96,3 +95,6 @@ C:\repos\EducationEfMVC\EducationEfMVC\bin\Microsoft.AspNet.TelemetryCorrelation
 C:\repos\EducationEfMVC\EducationEfMVC\bin\System.Diagnostics.DiagnosticSource.dll
 C:\repos\EducationEfMVC\EducationEfMVC\bin\Microsoft.AspNet.TelemetryCorrelation.xml
 C:\repos\EducationEfMVC\EducationEfMVC\bin\System.Diagnostics.DiagnosticSource.xml
+C:\repos\EducationEfMVC\EducationEfMVC\obj\Debug\EducationEfMVC.csprojResolveAssemblyReference.cache
+C:\repos\EducationEfMVC\EducationEfMVC\obj\Debug\EducationEfMVC.Migrations.addedmajors.resources
+C:\repos\EducationEfMVC\EducationEfMVC\obj\Debug\EducationEfMVC.csproj.GenerateResource.Cache
